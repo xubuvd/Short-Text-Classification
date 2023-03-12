@@ -10,4 +10,12 @@ a collection of search queries of size 150K gathered from publicly accessible vi
 
 # 3, Summary statistics of available 13 short text datasets.
 Note that 1K is equal to 1000.
+ Dataset | \#Class  | Ang.Len | Size(K) | \#Words | \#Train | \#Val | \#Test
+ --------| :-----------:  | :-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:
+ guesser[20] | qgen[20] | 5  |41.6| 43.5| 47.1| 39.2| 40.8
+ guesser(MN)[27]|TPG[27]|8   |- |48.77| -| -| -
+ guesser[19] | qgen[19] |8 |- |44.6| -| -| -
+ GST(ours)|VDST[13] (ours)|5 |<b>77.38</b>| <b>77.30</b> |<b>77.23</b> |<b>75.11</b> |<b>75.20</b>
+ GST(ours)|VDST[13] (ours)|8 |<b>83.22</b>| <b>83.32</b> |<b>83.46</b> |<b>81.50</b> |<b>81.55</b>
+ Human[19]| - |-| - |84.4| -| - |84.4
 
