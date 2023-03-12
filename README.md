@@ -26,7 +26,7 @@ Note that 1K is equal to 1000.
  <b>DanMU(or BSM)</b>[9,10] | 2|6.3|100|4,560|<b>70K</b>|<b>15K</b>|<b>15K</b>
  <b>CVQD(or VSQ)</b>[9,10] | 26 |8.5|150|5,320|<b>105K</b>|<b>22.5K</b>|<b>22.5K</b>
  
-# Please cite thehe References if you find it helpful. Thanks
+# Please cite these References if you find it helpful. Thanks
 [9] @InProceedings{PathWalk,<br>
   author =  {Wei Pang},<br>
   title = {Within-Dataset Graph Enhancement for Short Text Classification},<br>
