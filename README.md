@@ -26,18 +26,18 @@ Note that 1K is equal to 1000.
  <b>BSM</b> | 2|6.3|100|4,560|<b>70K</b>|<b>15K</b>|<b>15K</b>
  <b>VSQ</b> | 26 |8.5|150|5,320|<b>105K</b>|<b>22.5K</b>|<b>22.5K</b>
  
-# Please cite the papers if you find it helpful. Thanks.
-@InProceedings{PathWalk,
-  author =  {Wei Pang},
-  title = {Within-Dataset Graph Enhancement for Short Text Classification},
-  booktitle = {MLG of ECML-PKDD},
-  year = {2022}
-}
+# Please cite thehe References if you find it helpful. Thanks
+@InProceedings{PathWalk,\\
+  author =  {Wei Pang},\\
+  title = {Within-Dataset Graph Enhancement for Short Text Classification},\\
+  booktitle = {MLG of ECML-PKDD},\\
+  year = {2022}\\
+}\\
 
-@Article{TermGraph,
-  author =  {Wei Pang},
-  title = {Short Text Classification via Term Graph},
-  journal = {arXiv:2001.10338},
-  year = {2020}
-}
+@Article{TermGraph,\\
+  author =  {Wei Pang},\\
+  title = {Short Text Classification via Term Graph},\\
+  journal = {arXiv:2001.10338},\\
+  year = {2020}\\
+}\\
 
