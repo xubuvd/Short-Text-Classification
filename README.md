@@ -48,7 +48,7 @@ Note that 1K is equal to 1000.
 [5] L. Deng, J. Wiebe, Mpqa 3.0: Entity/event-level sentiment corpus, in: NAACL, 2015, pp. 1323–1328<br>
 [6] X.-H. Phan, L.-M. Nguyen, S. Horiguchi, Learning to classify short and sparse text and web with hidden topics from large-scale data collections, in: WWW, 2008, pp. 91–100 <br>
 [7] W. Hersh, C. Buckley, T. Leone, D. Hickam, Ohsumed: An interactive retrieval evaluation and new large test collection for research, in: SIGIR, 1994, pp. 192–201<br>
-[8] D. Vitale, P. Ferragina, U. Scaiella, Classification of short texts by deploy- ing topical annotations, in: ECIR, 2012, pp. 376–387<br>
+[8] D. Vitale, P. Ferragina, U. Scaiella, Classification of short texts by deploying topical annotations, in: ECIR, 2012, pp. 376–387<br>
 
 
 
