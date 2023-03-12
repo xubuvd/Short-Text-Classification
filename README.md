@@ -23,21 +23,27 @@ Note that 1K is equal to 1000.
  Ohsumed|23|6.8|7.4|11,764|5,180|1,110|1,110
  Twitter|2|3.5|10|21,065|7,000|1,500|1,500
  TagMyNews|7|5.1|32.5|38,629|22,785|4,882|4,882
- <b>BSM</b> | 2|6.3|100|4,560|<b>70K</b>|<b>15K</b>|<b>15K</b>
- <b>VSQ</b> | 26 |8.5|150|5,320|<b>105K</b>|<b>22.5K</b>|<b>22.5K</b>
+ <b>DanMU(or BSM)</b> | 2|6.3|100|4,560|<b>70K</b>|<b>15K</b>|<b>15K</b>
+ <b>CVQD(or VSQ)</b> | 26 |8.5|150|5,320|<b>105K</b>|<b>22.5K</b>|<b>22.5K</b>
  
 # Please cite thehe References if you find it helpful. Thanks
-@InProceedings{PathWalk,\\
-  author =  {Wei Pang},\\
-  title = {Within-Dataset Graph Enhancement for Short Text Classification},\\
-  booktitle = {MLG of ECML-PKDD},\\
-  year = {2022}\\
-}\\
+@InProceedings{PathWalk,<br>
+  author =  {Wei Pang},<br>
+  title = {Within-Dataset Graph Enhancement for Short Text Classification},<br>
+  booktitle = {MLG of ECML-PKDD},<br>
+  year = {2022}<br>
+}<br>
 
-@Article{TermGraph,\\
-  author =  {Wei Pang},\\
-  title = {Short Text Classification via Term Graph},\\
-  journal = {arXiv:2001.10338},\\
-  year = {2020}\\
-}\\
+@Article{TermGraph,<br>
+  author =  {Wei Pang},<br>
+  title = {Short Text Classification via Term Graph},<br>
+  journal = {arXiv:2001.10338},<br>
+  year = {2020}<br>
+}<br>
+
+
+
+
+
+
 
