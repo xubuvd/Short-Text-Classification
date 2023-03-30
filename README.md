@@ -1,14 +1,17 @@
-# Short-Text-Classification
+# 中文短文本分类（Chinese Short-Text-Classification）
 
-In order to facilitate research of Chinese short text classification (STC), we public two large-scale corpus of Chinese short text as the benchmark. Its details as follows.
+In order to facilitate research of Chinese short text classification (STC), we public two large-scale corpus of Chinese short text as the benchmark. Its details as follows.<br>
+If you like the project, please show your support by leaving a star ⭐.
 
-# 1, BSM, 
+# 1, BSM
+二分类情感识别，10万条中文弹幕消息，有两个情感类别：积极的和消极的，分成训练集（70%），验证集（15%）和测试集（15%）。<br>
 a large-scale bullet screen messages of size 100K collected from short-video websites, where the message is used for binary sentiment classification - Positive or Negative. We randomly divided in 70% for training, 15% for validation and 15% for testing.
 
-# 2, VSQ, 
+# 2, VSQ
+中文视频搜索引擎的用户Query，包括26个Query分类类别，数据集划分同BSM。<br>
 a collection of search queries of size 150K gathered from publicly accessible video websites. It involves classifying a query into fine-grained 26 labels, such as film, travel, music, fashion and sports. The split for training, validation and testing are same as BSM.
 
-# 3, Summary statistics of available 13 short text datasets.
+# 3, 13种短文本数据集统计信息，Summary statistics of available 13 short text datasets.
 Note that 1K is equal to 1000.
  Dataset | \#Class  | Avg.Len | Size(K) | \#Words | \#Train | \#Val | \#Test
  --------| :-----------:  | :-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:
@@ -27,7 +30,8 @@ Note that 1K is equal to 1000.
  <b>CVQD(or VSQ)</b>[9,10] | 26 |8.5|150|5,320|<b>105K</b>|<b>22.5K</b>|<b>22.5K</b>
  
 # Please cite these References if you find it helpful. Thanks
-[9] @InProceedings{PathWalk,<br>
+
+@InProceedings{PathWalk,<br>
   author =  {Wei Pang},<br>
   title = {Within-Dataset Graph Enhancement for Short Text Classification},<br>
   booktitle = {MLG of ECML-PKDD},<br>
@@ -41,6 +45,7 @@ Note that 1K is equal to 1000.
   year = {2020}<br>
 }<br>
 
+# References
 [1] B. Pang, L. Lee, Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales, in: ACL, 2005, pp. 115–124<br>
 [2] B. Pang, L. Lee, A sentimental education: Sentiment analysis using sub- jectivity summarization based on minimum cuts, in: ACL, 2004.<br>
 [3] X. Li, D. Roth, Learning question classifiers, in: ACL, 2002 <br>
