@@ -30,15 +30,13 @@ Note that 1K is equal to 1000.
  <b>CVQD(or VSQ)</b>[9,10] | 26 |8.5|150|5,320|<b>105K</b>|<b>22.5K</b>|<b>22.5K</b>
  
 # Please cite these References if you find it helpful. Thanks
-
 @InProceedings{PathWalk,<br>
-  author =  {Wei Pang},<br>
+  author =  {Wei Pang, et al.},<br>
   title = {Within-Dataset Graph Enhancement for Short Text Classification},<br>
   booktitle = {MLG of ECML-PKDD},<br>
   year = {2022}<br>
 }<br>
-
-[10] @Article{TermGraph,<br>
+@Article{TermGraph,<br>
   author =  {Wei Pang},<br>
   title = {Short Text Classification via Term Graph},<br>
   journal = {arXiv:2001.10338},<br>
@@ -54,6 +52,7 @@ Note that 1K is equal to 1000.
 [6] X.-H. Phan, L.-M. Nguyen, S. Horiguchi, Learning to classify short and sparse text and web with hidden topics from large-scale data collections, in: WWW, 2008, pp. 91–100 <br>
 [7] W. Hersh, C. Buckley, T. Leone, D. Hickam, Ohsumed: An interactive retrieval evaluation and new large test collection for research, in: SIGIR, 1994, pp. 192–201<br>
 [8] D. Vitale, P. Ferragina, U. Scaiella, Classification of short texts by deploying topical annotations, in: ECIR, 2012, pp. 376–387<br>
-
+[9] Wei Pang, et al. Within-Dataset Graph Enhancement for Short Text Classification. MLG of ECML-PKDD 2022.<br>
+[10] Wei Pang. Short Text Classification via Term Graph. arXiv:2001.10338, 2020.<br>
 
 
