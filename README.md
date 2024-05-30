@@ -3,6 +3,20 @@
 In order to facilitate research of Chinese short text classification (STC), we public two large-scale corpus of Chinese short text as the benchmark. Its details as follows.<br>
 If you like the project, please show your support by leaving a star ⭐.
 
+# Citation
+@Inproceedings{TermGraph,
+    author = {Wei Pang and Duan Ruixue and Ning Li},
+    title = {Within-Dataset Graph Enhancement for Short Text Classification},
+    booktitle = {ECMLPKDD Workshop},
+    year = {2022},
+    pages = {},
+    url = {https://openreview.net/forum?id=KOZTylWrOYu&referrer=%5Bthe%20profile%20of%20Wei%20Pang%5D(%2Fprofile%3Fid%3D~Wei_Pang4)},
+}
+
+
+# License
+All datasets are licensed under Apache 2.0.
+
 # 1, BSM
 二分类情感识别，10万条中文弹幕消息，有两个情感类别：积极的和消极的，分成训练集（70%），验证集（15%）和测试集（15%）。<br>
 a large-scale bullet screen messages of size 100K collected from short-video websites, where the message is used for binary sentiment classification - Positive or Negative. We randomly divided in 70% for training, 15% for validation and 15% for testing.
