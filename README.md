@@ -4,7 +4,7 @@ In order to facilitate research of Chinese short text classification (STC), we p
 If you like the project, please show your support by leaving a star ⭐.
 
 # Citation
-···
+```
 @Inproceedings{TermGraph,
     author = {Wei Pang and Duan Ruixue and Ning Li},
     title = {Within-Dataset Graph Enhancement for Short Text Classification},
@@ -13,7 +13,7 @@ If you like the project, please show your support by leaving a star ⭐.
     pages = {},
     url = {https://openreview.net/forum?id=KOZTylWrOYu&referrer=%5Bthe%20profile%20of%20Wei%20Pang%5D(%2Fprofile%3Fid%3D~Wei_Pang4)},
 }
-···
+```
 
 # License
 All datasets are licensed under Apache 2.0.
