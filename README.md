@@ -23,12 +23,18 @@ To support research in Chinese short text classification (STC), we have released
   doi = {https://doi.org/10.48550/arXiv.2001.10338}
 }
 ```
+# 训练代码 Training Codes
+```
+cd pathwalk
+nohup bash run_training.sh > r.log 2>&1 &
+```
 
-# 1, BSM
+# Open-source dataset
+## 1, BSM
 二分类情感识别，10万条中文弹幕消息，有两个情感类别：积极的和消极的，分成训练集（70%），验证集（15%）和测试集（15%）。<br>
 A large-scale dataset of 100K bullet screen messages was collected from short-video platforms for binary sentiment classification (Positive/Negative). The dataset was randomly split into 70% for training, 15% for validation, and 15% for testing.
 
-# 2, VSQ
+## 2, VSQ
 中文视频搜索引擎的用户Query，包括26个Query分类类别，数据集划分同BSM。<br>
 A dataset of 150K search queries was collected from publicly accessible video websites, classified into 26 fine-grained categories such as film, travel, music, fashion, and sports. The data is split into 70% for training, 15% for validation, and 15% for testing, consistent with the BSM dataset.
 
