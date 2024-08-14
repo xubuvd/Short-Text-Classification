@@ -1,0 +1,78 @@
+model               : TextRCNN
+embedding           : random
+dataset             : CR
+word                : True
+pad                 : 20
+<models.TextRCNN.Config object at 0x7fc508effad0>
+Loading data...
+Vocab size: 4569
+0it [00:00, ?it/s]2639it [00:00, 59060.20it/s]
+0it [00:00, ?it/s]566it [00:00, 107898.19it/s]
+0it [00:00, ?it/s]565it [00:00, 144182.39it/s]
+/home/pangwei/.conda/envs/vd/lib/python3.7/site-packages/torch/nn/modules/rnn.py:65: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+Time usage: 0:00:00
+<bound method Module.parameters of Model(
+  (embedding): Embedding(4569, 300, padding_idx=4568)
+  (lstm): LSTM(300, 300, batch_first=True, dropout=0.2, bidirectional=True)
+  (maxpool): MaxPool1d(kernel_size=20, stride=20, padding=0, dilation=1, ceil_mode=False)
+  (fc): Sequential(
+    (0): Dropout(p=0.2, inplace=False)
+    (1): Linear(in_features=900, out_features=2, bias=True)
+  )
+)>
+Epoch [1/20]
+  0%|          | 0/41 [00:00<?, ?it/s]  2%|▏         | 1/41 [00:00<00:08,  4.64it/s] 20%|█▉        | 8/41 [00:00<00:01, 30.36it/s] 39%|███▉      | 16/41 [00:00<00:00, 46.22it/s] 54%|█████▎    | 22/41 [00:00<00:00, 50.67it/s] 71%|███████   | 29/41 [00:00<00:00, 55.91it/s] 93%|█████████▎| 38/41 [00:00<00:00, 64.21it/s]42it [00:01, 41.84it/s]                        
+Iter:      0,  Train Loss:   1.9,  Train Acc: 37.50%,  Val Loss:   2.4,  Val Acc: 61.48%,  Time: 0:00:00 *
+Iter:     41,  Train Loss:  0.84,  Train Acc: 66.67%,  Val Loss:  0.52,  Val Acc: 74.91%,  Time: 0:00:01 *
+Epoch [2/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 17%|█▋        | 7/41 [00:00<00:00, 67.79it/s] 37%|███▋      | 15/41 [00:00<00:00, 74.81it/s] 56%|█████▌    | 23/41 [00:00<00:00, 76.17it/s] 76%|███████▌  | 31/41 [00:00<00:00, 69.89it/s] 95%|█████████▌| 39/41 [00:00<00:00, 65.29it/s]42it [00:00, 53.65it/s]                        
+Iter:     82,  Train Loss:  0.27,  Train Acc: 89.06%,  Val Loss:  0.49,  Val Acc: 78.27%,  Time: 0:00:02 *
+Epoch [3/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 20%|█▉        | 8/41 [00:00<00:00, 74.03it/s] 39%|███▉      | 16/41 [00:00<00:00, 67.24it/s] 78%|███████▊  | 32/41 [00:00<00:00, 105.35it/s]42it [00:00, 101.82it/s]                        
+Iter:    123,  Train Loss:  0.12,  Train Acc: 96.88%,  Val Loss:  0.59,  Val Acc: 78.27%,  Time: 0:00:02 
+Epoch [4/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 46%|████▋     | 19/41 [00:00<00:00, 181.17it/s] 93%|█████████▎| 38/41 [00:00<00:00, 119.87it/s]42it [00:00, 118.05it/s]                        
+Iter:    164,  Train Loss: 0.041,  Train Acc: 100.00%,  Val Loss:  0.79,  Val Acc: 75.44%,  Time: 0:00:03 
+Epoch [5/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 24%|██▍       | 10/41 [00:00<00:00, 94.48it/s] 49%|████▉     | 20/41 [00:00<00:00, 94.53it/s] 73%|███████▎  | 30/41 [00:00<00:00, 93.16it/s] 98%|█████████▊| 40/41 [00:00<00:00, 82.72it/s]42it [00:00, 87.87it/s]                        
+Iter:    205,  Train Loss: 0.027,  Train Acc: 98.44%,  Val Loss:  0.77,  Val Acc: 77.39%,  Time: 0:00:03 
+Epoch [6/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 34%|███▍      | 14/41 [00:00<00:00, 139.88it/s] 68%|██████▊   | 28/41 [00:00<00:00, 115.48it/s] 98%|█████████▊| 40/41 [00:00<00:00, 100.03it/s]42it [00:00, 107.63it/s]                        
+Iter:    246,  Train Loss: 0.012,  Train Acc: 100.00%,  Val Loss:  0.73,  Val Acc: 80.39%,  Time: 0:00:03 
+Epoch [7/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 34%|███▍      | 14/41 [00:00<00:00, 129.46it/s] 66%|██████▌   | 27/41 [00:00<00:00, 115.12it/s] 95%|█████████▌| 39/41 [00:00<00:00, 105.48it/s]42it [00:00, 110.99it/s]                        
+Iter:    287,  Train Loss: 0.0015,  Train Acc: 100.00%,  Val Loss:  0.87,  Val Acc: 77.92%,  Time: 0:00:04 
+Epoch [8/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 24%|██▍       | 10/41 [00:00<00:00, 98.24it/s] 49%|████▉     | 20/41 [00:00<00:00, 97.52it/s] 73%|███████▎  | 30/41 [00:00<00:00, 94.21it/s] 98%|█████████▊| 40/41 [00:00<00:00, 92.03it/s]42it [00:00, 93.68it/s]                        
+Iter:    328,  Train Loss: 0.0017,  Train Acc: 100.00%,  Val Loss:  0.83,  Val Acc: 78.27%,  Time: 0:00:04 
+Epoch [9/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 24%|██▍       | 10/41 [00:00<00:00, 97.96it/s] 63%|██████▎   | 26/41 [00:00<00:00, 130.61it/s] 98%|█████████▊| 40/41 [00:00<00:00, 114.07it/s]42it [00:00, 112.21it/s]                        
+Iter:    369,  Train Loss: 0.0014,  Train Acc: 100.00%,  Val Loss:  0.92,  Val Acc: 78.45%,  Time: 0:00:05 
+Epoch [10/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 27%|██▋       | 11/41 [00:00<00:00, 105.60it/s] 54%|█████▎    | 22/41 [00:00<00:00, 102.55it/s] 80%|████████  | 33/41 [00:00<00:00, 87.86it/s] 42it [00:00, 95.03it/s]                        
+Iter:    410,  Train Loss: 0.00051,  Train Acc: 100.00%,  Val Loss:  0.97,  Val Acc: 77.56%,  Time: 0:00:05 
+Epoch [11/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 24%|██▍       | 10/41 [00:00<00:00, 96.01it/s] 49%|████▉     | 20/41 [00:00<00:00, 94.29it/s] 76%|███████▌  | 31/41 [00:00<00:00, 99.98it/s]42it [00:00, 93.23it/s]                        42it [00:00, 94.52it/s]
+Iter:    451,  Train Loss: 0.0003,  Train Acc: 100.00%,  Val Loss:   1.0,  Val Acc: 77.74%,  Time: 0:00:05 
+Epoch [12/20]
+  0%|          | 0/41 [00:00<?, ?it/s] 32%|███▏      | 13/41 [00:00<00:00, 121.31it/s] 71%|███████   | 29/41 [00:00<00:00, 139.55it/s]42it [00:00, 142.28it/s]                        
+Iter:    492,  Train Loss: 0.00022,  Train Acc: 100.00%,  Val Loss:   1.0,  Val Acc: 77.56%,  Time: 0:00:06 
+Epoch [13/20]
+  0%|          | 0/41 [00:00<?, ?it/s]  0%|          | 0/41 [00:00<?, ?it/s]
+No optimization for a long time in last 11 epochs, auto-stopping...
+Test Loss:  0.46,  Test Acc: 78.94%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+           1     0.7250    0.6938    0.7090       209
+           2     0.8247    0.8455    0.8350       356
+
+    accuracy                         0.7894       565
+   macro avg     0.7748    0.7696    0.7720       565
+weighted avg     0.7878    0.7894    0.7884       565
+
+Confusion Matrix...
+[[145  64]
+ [ 55 301]]
+Time usage: 0:00:00

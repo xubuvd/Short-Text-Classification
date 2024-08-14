@@ -1,0 +1,58 @@
+# Dataset reader arguments
+# CR  CVQD  DanMu  MPQA  MR  SST1  SST2  SUBJ  THUCNews  TREC
+dataset:
+  class_list: "../data/DanMu/data/class.txt"
+  train_file_path: '../data/DanMu/data/train.txt'
+  dev_file_path: '../data/DanMu/data/dev.txt'
+  test_file_path: '../data/DanMu/data/test.txt'
+  
+  word_counts_json: '../data/DanMu/data/word_counts_train.json'
+  graph_gpickle: "../data/DanMu/data/graph.gpickle"
+  edge2id_pkl: "../data/DanMu/data/edge2id.pkl"
+  
+  use_word: False
+  
+  vocab_min_count: 5
+  max_sequence_length: 30
+  select_indegree_num: 50
+
+# Model related arguments
+model:
+  embedding_size: 300
+  lstm_hidden_size: 300
+  lstm_num_layers: 2
+  txt_bidirectional: True
+  dropout: 0.2
+  dropout_fc: 0.2
+  has_residual: True
+  multi_heads: 1
+  bert_path: './Bert-Chinese-Text-Classification-Pytorch-master/bert_pretrain/chinese/'
+  bert_hidden_size: 768
+  encoder: 'BiLSTM'
+
+# Optimization related arguments
+solver:
+  batch_size: 32 # 56 x num_gpus is a good rule of thumb
+  num_epochs: 50
+  initial_lr: 0.005
+  training_splits: "train"  # "trainval"
+  lr_gamma: 0.7
+  lr_milestones: # epochs when lr => lr * lr_gamma
+    - 3
+    - 7
+    - 13
+    - 17
+    - 31
+    - 37
+    - 41
+    - 47
+    - 73
+    - 89
+    - 97
+  warmup_factor: 0.2
+  warmup_epochs: 1
+  eta_min: 0.0001
+  max_grad_norm: 1.0
+  lr_schedule: 'warmup_linear'
+  stopping_epochs: 30
+

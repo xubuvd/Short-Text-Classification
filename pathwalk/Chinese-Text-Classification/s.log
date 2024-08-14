@@ -1,0 +1,9 @@
+nohup: 忽略输入
+DPCNN_
+FastText_
+TextCNN_
+TextLSTM_
+TextRCNN_
+TextRNN_Att_
+TextRNN_
+Transformer_

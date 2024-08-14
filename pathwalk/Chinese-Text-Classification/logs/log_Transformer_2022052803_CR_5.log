@@ -1,0 +1,128 @@
+model               : Transformer
+embedding           : random
+dataset             : CR
+word                : True
+pad                 : 20
+<models.Transformer.Config object at 0x7fc4104b9510>
+Loading data...
+0it [00:00, ?it/s]2639it [00:00, 247556.99it/s]
+Vocab size: 1143
+0it [00:00, ?it/s]2639it [00:00, 169706.52it/s]
+0it [00:00, ?it/s]566it [00:00, 171691.33it/s]
+0it [00:00, ?it/s]565it [00:00, 167298.39it/s]
+Time usage: 0:00:00
+<bound method Module.parameters of Model(
+  (embedding): Embedding(1143, 300, padding_idx=1142)
+  (postion_embedding): Positional_Encoding(
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (encoder): Encoder(
+    (attention): Multi_Head_Attention(
+      (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+      (fc_K): Linear(in_features=300, out_features=300, bias=True)
+      (fc_V): Linear(in_features=300, out_features=300, bias=True)
+      (attention): Scaled_Dot_Product_Attention()
+      (fc): Linear(in_features=300, out_features=300, bias=True)
+      (dropout): Dropout(p=0.2, inplace=False)
+      (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+    )
+    (feed_forward): Position_wise_Feed_Forward(
+      (fc1): Linear(in_features=300, out_features=1024, bias=True)
+      (fc2): Linear(in_features=1024, out_features=300, bias=True)
+      (dropout): Dropout(p=0.2, inplace=False)
+      (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (encoders): ModuleList(
+    (0): Encoder(
+      (attention): Multi_Head_Attention(
+        (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+        (fc_K): Linear(in_features=300, out_features=300, bias=True)
+        (fc_V): Linear(in_features=300, out_features=300, bias=True)
+        (attention): Scaled_Dot_Product_Attention()
+        (fc): Linear(in_features=300, out_features=300, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward): Position_wise_Feed_Forward(
+        (fc1): Linear(in_features=300, out_features=1024, bias=True)
+        (fc2): Linear(in_features=1024, out_features=300, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (1): Encoder(
+      (attention): Multi_Head_Attention(
+        (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+        (fc_K): Linear(in_features=300, out_features=300, bias=True)
+        (fc_V): Linear(in_features=300, out_features=300, bias=True)
+        (attention): Scaled_Dot_Product_Attention()
+        (fc): Linear(in_features=300, out_features=300, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward): Position_wise_Feed_Forward(
+        (fc1): Linear(in_features=300, out_features=1024, bias=True)
+        (fc2): Linear(in_features=1024, out_features=300, bias=True)
+        (dropout): Dropout(p=0.2, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (fc): Sequential(
+    (0): Dropout(p=0.2, inplace=False)
+    (1): Linear(in_features=6000, out_features=2, bias=True)
+  )
+)>
+Epoch [1/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  1%|          | 1/82 [00:00<00:12,  6.61it/s]  9%|▊         | 7/82 [00:00<00:02, 32.13it/s] 17%|█▋        | 14/82 [00:00<00:01, 46.40it/s] 26%|██▌       | 21/82 [00:00<00:01, 53.84it/s] 34%|███▍      | 28/82 [00:00<00:00, 57.97it/s] 43%|████▎     | 35/82 [00:00<00:00, 60.72it/s] 51%|█████     | 42/82 [00:00<00:00, 62.27it/s] 60%|█████▉    | 49/82 [00:00<00:00, 63.57it/s] 68%|██████▊   | 56/82 [00:00<00:00, 64.15it/s] 77%|███████▋  | 63/82 [00:01<00:00, 65.02it/s] 85%|████████▌ | 70/82 [00:01<00:00, 65.49it/s] 94%|█████████▍| 77/82 [00:01<00:00, 65.23it/s]83it [00:01, 53.62it/s]                        
+Iter:      0,  Train Loss:  0.83,  Train Acc: 46.88%,  Val Loss:   2.5,  Val Acc: 61.48%,  Time: 0:00:00 *
+Iter:     82,  Train Loss:  0.75,  Train Acc: 53.33%,  Val Loss:  0.65,  Val Acc: 62.90%,  Time: 0:00:02 *
+Epoch [2/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  7%|▋         | 6/82 [00:00<00:01, 59.71it/s] 16%|█▌        | 13/82 [00:00<00:01, 63.91it/s] 24%|██▍       | 20/82 [00:00<00:00, 63.98it/s] 33%|███▎      | 27/82 [00:00<00:00, 65.36it/s] 41%|████▏     | 34/82 [00:00<00:00, 65.50it/s] 50%|█████     | 41/82 [00:00<00:00, 65.67it/s] 59%|█████▊    | 48/82 [00:00<00:00, 65.98it/s] 67%|██████▋   | 55/82 [00:00<00:00, 64.58it/s] 76%|███████▌  | 62/82 [00:00<00:00, 65.87it/s] 84%|████████▍ | 69/82 [00:01<00:00, 65.91it/s] 93%|█████████▎| 76/82 [00:01<00:00, 65.88it/s]83it [00:01, 61.05it/s]                        83it [00:01, 63.97it/s]
+Iter:    164,  Train Loss:  0.61,  Train Acc: 62.50%,  Val Loss:  0.66,  Val Acc: 64.66%,  Time: 0:00:03 
+Epoch [3/20]
+  0%|          | 0/82 [00:00<?, ?it/s] 10%|▉         | 8/82 [00:00<00:01, 72.21it/s] 20%|█▉        | 16/82 [00:00<00:00, 68.34it/s] 28%|██▊       | 23/82 [00:00<00:00, 67.30it/s] 37%|███▋      | 30/82 [00:00<00:00, 66.79it/s] 45%|████▌     | 37/82 [00:00<00:00, 66.56it/s] 54%|█████▎    | 44/82 [00:00<00:00, 66.36it/s] 62%|██████▏   | 51/82 [00:00<00:00, 65.97it/s] 71%|███████   | 58/82 [00:00<00:00, 65.95it/s] 79%|███████▉  | 65/82 [00:00<00:00, 65.75it/s] 88%|████████▊ | 72/82 [00:01<00:00, 65.26it/s] 96%|█████████▋| 79/82 [00:01<00:00, 65.37it/s]83it [00:01, 64.96it/s]                        
+Iter:    246,  Train Loss:  0.41,  Train Acc: 81.25%,  Val Loss:  0.84,  Val Acc: 65.02%,  Time: 0:00:04 
+Epoch [4/20]
+  0%|          | 0/82 [00:00<?, ?it/s] 10%|▉         | 8/82 [00:00<00:01, 71.10it/s] 20%|█▉        | 16/82 [00:00<00:00, 67.88it/s] 28%|██▊       | 23/82 [00:00<00:00, 67.24it/s] 37%|███▋      | 30/82 [00:00<00:00, 65.84it/s] 45%|████▌     | 37/82 [00:00<00:00, 66.03it/s] 54%|█████▎    | 44/82 [00:00<00:00, 66.26it/s] 62%|██████▏   | 51/82 [00:00<00:00, 66.27it/s] 71%|███████   | 58/82 [00:00<00:00, 65.95it/s] 79%|███████▉  | 65/82 [00:00<00:00, 66.16it/s] 88%|████████▊ | 72/82 [00:01<00:00, 66.38it/s] 96%|█████████▋| 79/82 [00:01<00:00, 66.15it/s]83it [00:01, 65.43it/s]                        
+Iter:    328,  Train Loss:  0.22,  Train Acc: 90.62%,  Val Loss:  0.75,  Val Acc: 66.96%,  Time: 0:00:05 
+Epoch [5/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  9%|▊         | 7/82 [00:00<00:01, 67.93it/s] 17%|█▋        | 14/82 [00:00<00:01, 66.25it/s] 26%|██▌       | 21/82 [00:00<00:00, 66.16it/s] 34%|███▍      | 28/82 [00:00<00:00, 65.62it/s] 43%|████▎     | 35/82 [00:00<00:00, 66.02it/s] 51%|█████     | 42/82 [00:00<00:00, 65.61it/s] 60%|█████▉    | 49/82 [00:00<00:00, 65.62it/s] 68%|██████▊   | 56/82 [00:00<00:00, 65.65it/s] 77%|███████▋  | 63/82 [00:00<00:00, 65.30it/s] 85%|████████▌ | 70/82 [00:01<00:00, 66.03it/s] 94%|█████████▍| 77/82 [00:01<00:00, 65.52it/s]83it [00:01, 64.70it/s]                        
+Iter:    410,  Train Loss:  0.53,  Train Acc: 78.12%,  Val Loss:  0.91,  Val Acc: 65.90%,  Time: 0:00:07 
+Epoch [6/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  9%|▊         | 7/82 [00:00<00:01, 66.80it/s] 17%|█▋        | 14/82 [00:00<00:01, 65.33it/s] 26%|██▌       | 21/82 [00:00<00:00, 66.01it/s] 34%|███▍      | 28/82 [00:00<00:00, 65.57it/s] 43%|████▎     | 35/82 [00:00<00:00, 65.01it/s] 51%|█████     | 42/82 [00:00<00:00, 65.50it/s] 60%|█████▉    | 49/82 [00:00<00:00, 65.56it/s] 68%|██████▊   | 56/82 [00:00<00:00, 65.66it/s] 77%|███████▋  | 63/82 [00:00<00:00, 65.62it/s] 85%|████████▌ | 70/82 [00:01<00:00, 65.80it/s] 94%|█████████▍| 77/82 [00:01<00:00, 65.70it/s]83it [00:01, 64.94it/s]                        
+Iter:    492,  Train Loss:  0.24,  Train Acc: 87.50%,  Val Loss:   1.1,  Val Acc: 60.60%,  Time: 0:00:08 
+Epoch [7/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  9%|▊         | 7/82 [00:00<00:01, 65.60it/s] 17%|█▋        | 14/82 [00:00<00:01, 65.44it/s] 26%|██▌       | 21/82 [00:00<00:00, 65.58it/s] 34%|███▍      | 28/82 [00:00<00:00, 65.30it/s] 43%|████▎     | 35/82 [00:00<00:00, 65.28it/s] 51%|█████     | 42/82 [00:00<00:00, 65.36it/s] 60%|█████▉    | 49/82 [00:00<00:00, 65.72it/s] 68%|██████▊   | 56/82 [00:00<00:00, 65.26it/s] 77%|███████▋  | 63/82 [00:00<00:00, 64.93it/s] 85%|████████▌ | 70/82 [00:01<00:00, 65.24it/s] 94%|█████████▍| 77/82 [00:01<00:00, 59.92it/s]83it [00:01, 64.50it/s]                        
+Iter:    574,  Train Loss:  0.13,  Train Acc: 93.75%,  Val Loss:   1.1,  Val Acc: 65.55%,  Time: 0:00:09 
+Epoch [8/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  9%|▊         | 7/82 [00:00<00:01, 65.22it/s] 17%|█▋        | 14/82 [00:00<00:01, 64.78it/s] 26%|██▌       | 21/82 [00:00<00:00, 66.01it/s] 34%|███▍      | 28/82 [00:00<00:00, 66.09it/s] 43%|████▎     | 35/82 [00:00<00:00, 66.75it/s] 51%|█████     | 42/82 [00:00<00:00, 66.90it/s] 60%|█████▉    | 49/82 [00:00<00:00, 65.62it/s] 68%|██████▊   | 56/82 [00:00<00:00, 65.50it/s] 77%|███████▋  | 63/82 [00:00<00:00, 65.57it/s] 85%|████████▌ | 70/82 [00:01<00:00, 65.70it/s] 94%|█████████▍| 77/82 [00:01<00:00, 60.55it/s]83it [00:01, 64.80it/s]                        
+Iter:    656,  Train Loss:  0.33,  Train Acc: 87.50%,  Val Loss:   1.6,  Val Acc: 67.31%,  Time: 0:00:10 
+Epoch [9/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  9%|▊         | 7/82 [00:00<00:01, 66.55it/s] 17%|█▋        | 14/82 [00:00<00:01, 65.82it/s] 26%|██▌       | 21/82 [00:00<00:00, 65.97it/s] 34%|███▍      | 28/82 [00:00<00:00, 66.15it/s] 43%|████▎     | 35/82 [00:00<00:00, 65.77it/s] 51%|█████     | 42/82 [00:00<00:00, 66.05it/s] 60%|█████▉    | 49/82 [00:00<00:00, 65.27it/s] 68%|██████▊   | 56/82 [00:00<00:00, 66.03it/s] 77%|███████▋  | 63/82 [00:00<00:00, 65.97it/s] 85%|████████▌ | 70/82 [00:01<00:00, 66.09it/s] 94%|█████████▍| 77/82 [00:01<00:00, 61.74it/s]83it [00:01, 65.13it/s]                        
+Iter:    738,  Train Loss:  0.07,  Train Acc: 96.88%,  Val Loss:   1.7,  Val Acc: 68.73%,  Time: 0:00:12 
+Epoch [10/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  9%|▊         | 7/82 [00:00<00:01, 66.19it/s] 17%|█▋        | 14/82 [00:00<00:01, 65.33it/s] 26%|██▌       | 21/82 [00:00<00:00, 63.21it/s] 34%|███▍      | 28/82 [00:00<00:00, 64.11it/s] 43%|████▎     | 35/82 [00:00<00:00, 63.97it/s] 51%|█████     | 42/82 [00:00<00:00, 64.34it/s] 60%|█████▉    | 49/82 [00:00<00:00, 64.99it/s] 68%|██████▊   | 56/82 [00:00<00:00, 65.23it/s] 77%|███████▋  | 63/82 [00:00<00:00, 65.60it/s] 85%|████████▌ | 70/82 [00:01<00:00, 65.60it/s] 94%|█████████▍| 77/82 [00:01<00:00, 61.54it/s]83it [00:01, 64.16it/s]                        
+Iter:    820,  Train Loss: 0.017,  Train Acc: 100.00%,  Val Loss:   1.9,  Val Acc: 67.67%,  Time: 0:00:13 
+Epoch [11/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  9%|▊         | 7/82 [00:00<00:01, 65.57it/s] 17%|█▋        | 14/82 [00:00<00:01, 65.56it/s] 26%|██▌       | 21/82 [00:00<00:00, 65.95it/s] 34%|███▍      | 28/82 [00:00<00:00, 65.93it/s] 43%|████▎     | 35/82 [00:00<00:00, 65.67it/s] 51%|█████     | 42/82 [00:00<00:00, 65.84it/s] 60%|█████▉    | 49/82 [00:00<00:00, 65.81it/s] 68%|██████▊   | 56/82 [00:00<00:00, 66.04it/s] 77%|███████▋  | 63/82 [00:00<00:00, 65.57it/s] 85%|████████▌ | 70/82 [00:01<00:00, 65.79it/s] 94%|█████████▍| 77/82 [00:01<00:00, 62.15it/s]83it [00:01, 64.70it/s]                        
+Iter:    902,  Train Loss: 0.016,  Train Acc: 100.00%,  Val Loss:   1.7,  Val Acc: 68.73%,  Time: 0:00:14 
+Epoch [12/20]
+  0%|          | 0/82 [00:00<?, ?it/s]  0%|          | 0/82 [00:00<?, ?it/s]
+No optimization for a long time in last 11 epochs, auto-stopping...
+Test Loss:  0.67,  Test Acc: 63.36%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+           1     0.5086    0.2823    0.3631       209
+           2     0.6659    0.8399    0.7429       356
+
+    accuracy                         0.6336       565
+   macro avg     0.5873    0.5611    0.5530       565
+weighted avg     0.6077    0.6336    0.6024       565
+
+Confusion Matrix...
+[[ 59 150]
+ [ 57 299]]
+Time usage: 0:00:00

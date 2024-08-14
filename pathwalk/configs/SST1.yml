@@ -1,0 +1,54 @@
+# Dataset reader arguments
+# CR  CVQD  DanMu  MPQA  MR  SST1  SST2  SUBJ  THUCNews  TREC
+dataset:
+  class_list: "data/SST1/data/class.txt"
+  train_file_path: 'data/SST1/data/train.txt'
+  dev_file_path: 'data/SST1/data/dev.txt'
+  test_file_path: 'data/SST1/data/test.txt'
+  word_counts_json: 'data/SST1/data/word_counts_train_bert.json'
+  graph_gpickle: "data/SST1/data/graph_bert.gpickle"
+  edge2id_pkl: "data/SST1/data/edge2id_bert.pkl"
+  
+  use_word: True
+  
+  vocab_min_count: 0
+  max_sequence_length: 20
+  select_indegree_num: 10
+
+# Model related arguments
+model:
+  embedding_size: 300
+  lstm_hidden_size: 300
+  lstm_num_layers: 2
+  txt_bidirectional: True
+  dropout: 0.2
+  dropout_fc: 0.2
+  has_residual: True
+  multi_heads: 1
+  bert_path: './Bert-Chinese-Text-Classification-Pytorch-master/bert_pretrain'
+  bert_hidden_size: 768
+  encoder: 'BERT'
+
+# Optimization related arguments
+solver:
+  batch_size: 64 # 56 x num_gpus is a good rule of thumb
+  num_epochs: 50
+  initial_lr: 0.005
+  training_splits: "train"  # "trainval"
+  lr_gamma: 0.5
+  lr_milestones: # epochs when lr => lr * lr_gamma
+    - 3
+    - 7
+    - 13
+    - 17
+    - 31
+    - 37
+    - 41
+    - 47
+  warmup_factor: 0.2
+  warmup_epochs: 1
+  eta_min: 0.0001
+  max_grad_norm: 1.0
+  lr_schedule: 'warmup_linear'
+  stopping_epochs: 10
+
