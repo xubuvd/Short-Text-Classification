@@ -1,7 +1,6 @@
 # 中文短文本分类（Chinese Short-Text-Classification）
 
-In order to facilitate research of Chinese short text classification (STC), we public two large-scale corpus of Chinese short text as the benchmark. Its details as follows.<br>
-If you like the project, please show your support by leaving a star ⭐.
+To support research in Chinese short text classification (STC), we have released two large-scale Chinese short text corpora as benchmarks. Details are provided below. If you find this project valuable, please consider leaving a star⭐.
 
 # Citation
 ```
@@ -13,18 +12,25 @@ If you like the project, please show your support by leaving a star ⭐.
     pages = {},
     url = {https://openreview.net/forum?id=KOZTylWrOYu&referrer=%5Bthe%20profile%20of%20Wei%20Pang%5D(%2Fprofile%3Fid%3D~Wei_Pang4)},
 }
-```
 
-# License
-All datasets are licensed under Apache 2.0.
+@Article{ShortGraph,
+  author = {Wei Pang},
+  title = {Short Text Classification via Term Graph},
+  journal = {arXiv.2001.10338},
+  month = {Jan},
+  year = {2020},
+  pages = {},
+  doi = {https://doi.org/10.48550/arXiv.2001.10338}
+}
+```
 
 # 1, BSM
 二分类情感识别，10万条中文弹幕消息，有两个情感类别：积极的和消极的，分成训练集（70%），验证集（15%）和测试集（15%）。<br>
-a large-scale bullet screen messages of size 100K collected from short-video websites, where the message is used for binary sentiment classification - Positive or Negative. We randomly divided in 70% for training, 15% for validation and 15% for testing.
+A large-scale dataset of 100K bullet screen messages was collected from short-video platforms for binary sentiment classification (Positive/Negative). The dataset was randomly split into 70% for training, 15% for validation, and 15% for testing.
 
 # 2, VSQ
 中文视频搜索引擎的用户Query，包括26个Query分类类别，数据集划分同BSM。<br>
-a collection of search queries of size 150K gathered from publicly accessible video websites. It involves classifying a query into fine-grained 26 labels, such as film, travel, music, fashion and sports. The split for training, validation and testing are same as BSM.
+A dataset of 150K search queries was collected from publicly accessible video websites, classified into 26 fine-grained categories such as film, travel, music, fashion, and sports. The data is split into 70% for training, 15% for validation, and 15% for testing, consistent with the BSM dataset.
 
 # 3, 13种短文本数据集统计信息，Summary statistics of available 13 short text datasets.
 Note that 1K is equal to 1000.
@@ -53,6 +59,10 @@ Note that 1K is equal to 1000.
 [6] X.-H. Phan, L.-M. Nguyen, S. Horiguchi, Learning to classify short and sparse text and web with hidden topics from large-scale data collections, in: WWW, 2008, pp. 91–100 <br>
 [7] W. Hersh, C. Buckley, T. Leone, D. Hickam, Ohsumed: An interactive retrieval evaluation and new large test collection for research, in: SIGIR, 1994, pp. 192–201<br>
 [8] D. Vitale, P. Ferragina, U. Scaiella, Classification of short texts by deploying topical annotations, in: ECIR, 2012, pp. 376–387<br>
+[9] W. Pang et al., Within-Dataset Graph Enhancement for Short Text Classification, in ECML-PKDD 2022<br>
+[10] Wei Pang. Short Text Classification via Term Graph, in arXiv:2001.10338, 2020<br>
 
+# License
+All datasets are licensed under Apache 2.0.
 
 
