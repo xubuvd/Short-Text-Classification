@@ -1,6 +1,6 @@
 # 中文短文本分类（Chinese Short-Text-Classification）
-
-To support research in Chinese short text classification (STC), we have released two large-scale Chinese short text corpora as benchmarks. Details are provided below. If you find this project valuable, please consider leaving a star⭐.
+为支持中文短文本分类（STC）研究，我们发布了两个大规模的中文短文本语料库作为基准测试。详细信息如下。如果您认为此项目有价值，请考虑给我们点个星⭐。<br>
+To support research in Chinese short text classification (STC), we have released two large-scale Chinese short text corpora as benchmarks. Details are provided below. If you find this project valuable, please consider leaving a star⭐.<br>
 
 # Citation
 ```
